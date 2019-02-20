@@ -1,0 +1,14 @@
+package com.example.flex.api;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class FlexDividasApiApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(FlexDividasApiApplication.class, args);
+	}
+
+}
+
