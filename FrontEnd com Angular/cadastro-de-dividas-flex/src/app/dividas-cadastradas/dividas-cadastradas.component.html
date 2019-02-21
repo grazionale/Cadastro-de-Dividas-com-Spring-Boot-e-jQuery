@@ -1,0 +1,12 @@
+<h4>Dividas Cadastradas</h4>
+<div class="">
+  <div class="list-group" id="usuarios_cadastrados">
+  </div>
+</div>
+
+
+<div *ngFor='let divida of dividas'>
+    <!-- <li class="list-listgroup-item list-group-item-action usuario_cadastrado list-group-item-info" usuario_cadastrado_id ="{{divida.id_usuario}}">{{divida.id_usuario}}</li> -->
+  <li class="list-listgroup-item list-group-item-action usuario_cadastrado list-group-item-info">{{divida.id}} | {{divida.nome_usuario}} - {{divida.id_usuario}} </li>
+
+</div>
