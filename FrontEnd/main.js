@@ -22,7 +22,7 @@ $(document).ready(function () {
 
 
     $.ajax({
-        url: 'http://localhost:8091/debitos',
+        url: 'http://localhost:8080/debitos',
         type: "get",
         data: dados,
         processData: false,
@@ -73,7 +73,7 @@ $(document).ready(function () {
         if($('#id_divida').val() == ''){
             $.ajax({
                 type: 'POST',
-                url: 'http://localhost:8091/debitos',
+                url: 'http://localhost:8080/debitos',
                 data: JSON.stringify(data),
                 crossDomain: false,
                 contentType:"application/json; charset=utf-8",
@@ -91,7 +91,7 @@ $(document).ready(function () {
         } else {
             $.ajax({
                 type: 'PUT',
-                url: 'http://localhost:8091/debitos/' + $('#id_divida').val(),
+                url: 'http://localhost:8080/debitos/' + $('#id_divida').val(),
                 data: JSON.stringify(data),
                 crossDomain: false,
                 contentType:"application/json; charset=utf-8",
@@ -117,7 +117,7 @@ $(document).ready(function () {
             return 0;
         }
         id_divida = $('#id_divida').val();
-        url = 'http://localhost:8091/debitos/' + id_divida;
+        url = 'http://localhost:8080/debitos/' + id_divida;
         $.ajax({
             url: url,
             type: 'DELETE',
@@ -150,7 +150,7 @@ $(document).ready(function () {
 
 
 function abrir_divida_cadastrada (id){
-    url = 'http://localhost:8091/debitos/' + id;
+    url = 'http://localhost:8080/debitos/' + id;
     var dados = [];
     $.ajax({
         url: url,

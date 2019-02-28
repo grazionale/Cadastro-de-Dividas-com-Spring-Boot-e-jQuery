@@ -9,13 +9,13 @@ export class DividaService {
 
   constructor(private http: HttpClient) { }
 
-  consultarDividas(): Promise<any>{
+  consultarDividas(): Promise<any> {
     return this.http.get('http://localhost:8080/debitos')
-    .toPromise()
-    .then(response => {
-      console.log(response);
-       return response;
-    });
+      .toPromise()
+      .then(response => {
+        console.log(response);
+        return response;
+      });
   }
 
 }

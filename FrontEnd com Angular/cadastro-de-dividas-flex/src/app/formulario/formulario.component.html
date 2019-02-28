@@ -8,7 +8,7 @@
                       <option *ngFor='let usuario of usuarios' [value]="usuario.id" [ngValue]="usuario.name">{{usuario.name}}</option>                    
                   </select>
               </div>
-              <form action="" method="post">
+              <form>
                   <div class="form-group">
                       <label for="nome">Cliente</label>
                       <input type="text" disabled class="form-control" id="nome" placeholder="Nome" [value]="selectedValue">
@@ -26,7 +26,7 @@
                       <input type="date" class="form-control" id="date" placeholder="Data">
                   </div>
                   <input type="hidden" id="id_usuario" value="">
-                  <button type="button" name="salvar" class="btn btn-primary" id="salvar_debito">Salvar</button>
+                  <button type="button" name="salvar" class="btn btn-primary" id="salvar_debito" (click)="salvarDebito()">Salvar</button>
                   <button type="button" class="btn btn-danger" id="excluir_debito">Excluir</button>
                   <button type="button" class="btn btn-secondary" id="cancelar">Cancelar</button>
 

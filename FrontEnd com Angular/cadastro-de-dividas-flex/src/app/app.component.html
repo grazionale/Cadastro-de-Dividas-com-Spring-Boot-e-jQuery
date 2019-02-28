@@ -17,7 +17,9 @@
       <h1>{{title}}</h1>
       <div class="row">
           <div class="col-md-6 col-sm-12 side1">
-              <app-dividas-cadastradas></app-dividas-cadastradas>
+            <div *ngFor='let d of dividas'>
+              <app-dividas-cadastradas [divs]="d"></app-dividas-cadastradas>
+            </div>
           </div>
           <div class="col-md-6 col-sm-12">
               <app-formulario></app-formulario>
