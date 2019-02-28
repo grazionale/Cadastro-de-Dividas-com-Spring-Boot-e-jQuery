@@ -7,10 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Cadastro de Dividas com Spring Boot e Angular';
-  dividas = [];
-
-  aoAdicionar(divida) {
-    this.dividas.push(divida);
-    console.log(this.dividas);
-  }
 }
